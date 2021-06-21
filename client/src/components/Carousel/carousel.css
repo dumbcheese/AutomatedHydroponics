@@ -1,0 +1,174 @@
+.carouselContainer{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background: #FCFCFC 0% 0% no-repeat padding-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+.carouselTitle{
+font-size: 36px;
+font-weight: bold;
+color: #2B4069;
+display:flex;
+margin: auto;
+margin-top: 5%;
+}
+
+.carouselFlex{
+display: flex;
+width: auto;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.carouselText{
+font-size: 24px;
+font-weight: normal;
+color: #9BA5B8;
+margin-top: 12px;
+margin-bottom: -2.5%;
+}
+
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+.mySlides:nth-child(1){
+    display:block;
+}
+
+.checkBoxContainer{
+  margin-top: 15px !important;
+}
+
+.blockClass{
+  display: block !important;
+  visibility: visible !important;
+}
+
+.noneClass{
+  display: none !important;
+}
+
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.carouselImage{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 5vh 12px;
+  background-color: #FCFCFC;
+  border: 8px solid #a2edda;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+/* .dot:nth-child(1){
+  background-color: #48DDB8;
+} */
+.dot:hover{
+  background-color: #a2edda;
+}
+
+.dots{
+  height:100px;
+}
+
+.dot:active{
+  transform: scale(1.2);
+}
+
+.dot, ::after, ::before {
+  box-sizing: content-box !important;
+}
+
+.firstDot{
+  background-color: #48DDB8;
+}
+
+.active{
+  background-color: #48DDB8;
+}
+
+/* .active, .dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.3s;
+  animation-name: fade;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.fade:not(.show) {
+  opacity: 1 !important;
+}
+
+.textAlignCenter{
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .carouselContainerAlpha{
+    display: none !important;
+  }
+  .dot{
+    display: none !important;
+  }
+  .mySlides{
+    display: none !important;
+  }
+}

@@ -1,0 +1,15 @@
+
+
+.latestContAlpha{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around;
+}
+
+.latestCont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
